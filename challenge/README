@@ -1,4 +1,7 @@
-# Almost ready!
+# Challenge
 
-Implement Gaussian Random Number Generator
-`https://people.sc.fsu.edu/~jburkardt/c_src/normal/normal.html
+The challenge consists in solving the Freedman's Paradox. Please refer to the following article,
+
+http://www.public.asu.edu/~gasweete/crj604/readings/1983-Freedman%20(Screening%20Regression%20Equations).pdf
+
+and check the pdf in this folder named chal.pdf for instructions.
