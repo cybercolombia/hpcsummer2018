@@ -1,3 +1,4 @@
+CythonExamples/*/*.c
 *.o
 *.so
 exe*
