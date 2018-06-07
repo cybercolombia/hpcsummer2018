@@ -6,10 +6,10 @@
 // Source taken from:
 // http://c-faq.com/lib/gaussian.html
 
-double normal_rand(void){
-	static double U, V;
+my_prec normal_rand(void){
+	static my_prec U, V;
 	static int phase = 0;
-	double Z;
+	my_prec Z;
 
 	if(phase == 0) {
 		U = (rand() + 1.) / (RAND_MAX + 2.);

@@ -1,1 +1,1 @@
-double normal_rand(void);
+my_prec normal_rand(void);

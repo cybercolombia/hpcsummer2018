@@ -56,7 +56,7 @@ int main(int argc, char** argv){
 	// Set all values of the matrix to 1
 	for( j=0; j < size_data; j++ )
 		for( k=0; k < size_X; k++ )
-			dataMatrix[j][k] = 1;
+			dataMatrix[j][k] = 0.0;
 	// Collect stop time
 	SimpleTimer_stop( &t1 );
 	// Print duration
@@ -70,7 +70,7 @@ int main(int argc, char** argv){
 	// Set all values of the matrix to 1
 	for( j=0; j < size_data; j++ )
 		for( k=0; k < size_X; k++ )
-			dataMatrix[j][k] = 2;
+			dataMatrix[j][k] = 2.0;
 	// Collect stop time
 	SimpleTimer_stop( &t1 );
 	// Print duration
