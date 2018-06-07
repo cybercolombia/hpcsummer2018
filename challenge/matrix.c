@@ -1,6 +1,7 @@
 #include "defs.h"
 #include "arrays.h"
 #include "timer.h"
+#include "randn.h"
 
 
 void SetMatrixZero(my_prec **A,unsigned int rows, unsigned int cols){
@@ -8,6 +9,13 @@ void SetMatrixZero(my_prec **A,unsigned int rows, unsigned int cols){
 	for( j = 0; j < rows; j++ )
 		for( k = 0; k < cols; k++ )
 			A[j][k] = 0;
+}
+
+void SetMatrixRandom(my_prec **A,unsigned int rows, unsigned int cols){
+	int j,k;
+	for( j = 0; j < rows; j++ )
+		for( k = 0; k < cols; k++ )
+			A[j][k] = normal_rand();
 }
 
 // Matrix Transpose Code
@@ -22,7 +30,7 @@ void SetMatrixZero(my_prec **A,unsigned int rows, unsigned int cols){
 
 
 // Run Matrix Calculations
-void myFunc(void){
+int main(int argc, char** argv){
 	// We create the problem initial conditions (positive integers)
 	unsigned int samples;
 	unsigned int size_X;
@@ -33,7 +41,9 @@ void myFunc(void){
 	my_prec **dataMatrix;
 	// Timer example
 	SimpleTimer_t t1,t2;
-
+	// Random seed, set the seed to the random number generator
+	int seed = 7;
+    srand(seed);
 
 	// Setting the problem size!
 	samples = 2048; size_X = 128; size_data = 1024;
@@ -66,8 +76,11 @@ void myFunc(void){
 	// Print duration
 	SimpleTimer_print( &t1 );
 	// END: DEBUG SNIPPET
+	// Why does it take shorter time to run this loop?
 
-
+	//
+	// Reset the matrix elements to zero
+	//
 	SimpleTimer_start( &t2 );
 	// Set all values of the matrix to 0
 	SetMatrixZero(dataMatrix,size_data,size_X);
@@ -76,15 +89,25 @@ void myFunc(void){
 	// Print duration
 	SimpleTimer_print( &t2 );
 
-
+	//
+	// Place random elements!
+	//
+	SimpleTimer_start( &t2 );
+	// Set all values of the matrix to 0
+	SetMatrixRandom(dataMatrix,size_data,size_X);
+	// Collect stop time
+	SimpleTimer_stop( &t2 );
+	// Print duration
+	SimpleTimer_print( &t2 );
+	//
+	// Check out the Times!
+	//
 
 	// Finally, we clean the memory stack as suggested
 	// from arrays.c
 	free(dataMatrix[0]);
 	free(dataMatrix), dataMatrix = NULL;
-}
 
-
-int main(int argc, char** argv){
+	// End
 	return 0;
 }
