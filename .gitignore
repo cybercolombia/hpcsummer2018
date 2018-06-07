@@ -2,3 +2,5 @@ CythonExamples/*/*.c
 *.o
 *.so
 exe*
+*/build
+*.orig
