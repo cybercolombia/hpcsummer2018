@@ -6,10 +6,6 @@ cdef extern from "../matrix.h":
 	void SetMatrixRandom(my_prec **A,unsigned int, unsigned int)
 	my_prec **treatMatrix(unsigned int, unsigned int, unsigned int)
 
-
-# cdef double f(double x):
-# 	return sin(x**2)
-
 def convert2DF(unsigned int samples, unsigned int size_X, unsigned int size_data):
 	cdef my_prec **m
 	cdef double s, dx
