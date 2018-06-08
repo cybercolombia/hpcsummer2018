@@ -1,3 +1,4 @@
+challenge/python/rectangle_test
 CythonExamples/*/*.c
 *.o
 *.so
