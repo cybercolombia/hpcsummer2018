@@ -13,6 +13,7 @@ my_prec *CREATE_ARRAY(const unsigned int a){
 };
 
 my_prec **CREATE_MATRIX(const unsigned int a,const unsigned int b){
+	int j;
 	// We create a "pointer" of pointers to my_prec* with the 
 	// number of rows. i.e. an array of pointers to the "first" element
 	// in each row of the matrix
@@ -36,7 +37,7 @@ my_prec **CREATE_MATRIX(const unsigned int a,const unsigned int b){
 
 	// Now we assign accordingly pointers to each element
 	// look at v[j-1]+b! Any questions?
-	for( int j = 1; j < a; j++ )
+	for( j = 1; j < a; j++ )
 		v[j] = v[j-1] + b;
 	// Print some help to free memory adequately
 	printf("\n\nARRAYS:: To avoid memory leaks, free memory via a 2-step proc:\n");
