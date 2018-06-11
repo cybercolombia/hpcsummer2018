@@ -1,4 +1,5 @@
 #include "defs.h"
+#include <stdlib.h>
 
 #define PI 3.141592654
 

@@ -13,3 +13,14 @@ def convert2DF(unsigned int samples, unsigned int size_X, unsigned int size_data
 	df = pd.DataFrame([[m[it][jt] for jt in range(size_X)] for it in range(size_data)])
 	m = treatMatrix(samples,size_X,size_data)
 	return df
+
+def export2dat(unsigned int samples, unsigned int size_X, unsigned int size_data):
+	cdef my_prec **m
+	cdef double s, dx
+	m = treatMatrix(samples,size_X,size_data)
+	fi = open("freedman.dat","w")
+	for jt in range(size_data):
+		fi.write(" ".join(map(str,[m[jt][kt] for kt in range(size_X)]))+"\n")
+	fi.close()
+	m = treatMatrix(samples,size_X,size_data)
+	return True

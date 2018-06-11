@@ -10,12 +10,14 @@ int main(int argc, char** argv){
 	unsigned int j,k;
 	// Matrix Object
 	my_prec **dataMatrix;
+
 	// Timer example
 	SimpleTimer_t t1,t2;
 	// Random seed, set the seed to the random number generator
-    srand(seed);
+	srand(seed);
 
 	// Setting the problem size!
+	// 8192 samples of 128 indep vars and 512 values.
 	samples = 8192; size_X = 128; size_data = 512;
 
 	// Creating the Matrix

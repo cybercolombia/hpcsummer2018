@@ -8,7 +8,9 @@ my_prec *CREATE_ARRAY(const unsigned int a){
 	// is the default initialized value for a pointer.
 	if (!v) return NULL;
 	// Print some help to free memory adequately
-	printf("\n\nARRAYS:: To free memory please use free(ArrayVar)\n\n\n");
+	printf("\n\nSIZE:: size of element = %d bytes\n",sizeof(my_prec));
+	printf("         size of array = %d bytes\n",a * sizeof(my_prec));
+	printf("ARRAYS:: To free memory please use free(ArrayVar)\n\n\n");
 	return v;
 };
 
@@ -39,7 +41,9 @@ my_prec **CREATE_MATRIX(const unsigned int a,const unsigned int b){
 	for( int j = 1; j < a; j++ )
 		v[j] = v[j-1] + b;
 	// Print some help to free memory adequately
-	printf("\n\nARRAYS:: To avoid memory leaks, free memory via a 2-step proc:\n");
+	printf("\n\nSIZE:: size of element = %d bytes\n",sizeof(my_prec));
+	printf("        size of matrix = %d bytes\n",a * b * sizeof(my_prec));
+	printf("MATRIX:: To avoid memory leaks, free memory via a 2-step proc:\n");
 	printf("\tfree(ArrayVar[0]);\n\tfree(ArrayVar), dataMatrix = NULL;\n\n\n");
 	return v;
 };
