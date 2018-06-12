@@ -1,3 +1,8 @@
+### This File was created following the blog from r-bloggers by Alexej
+# Please visit https://www.r-bloggers.com/freedmans-paradox/
+
+
+
 library(dplyr)
 library(broom)
 library(ggplot2)
