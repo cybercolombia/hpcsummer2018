@@ -4,4 +4,13 @@ The challenge consists in solving the Freedman's Paradox. Please refer to the fo
 
 http://www.public.asu.edu/~gasweete/crj604/readings/1983-Freedman%20(Screening%20Regression%20Equations).pdf
 
-and check the pdf in this folder named mlr.pdf for instructions.
+For a detailed explanation on the Multilinear regression model and considerations please refer to:
+http://reliawiki.org/index.php/Multiple_Linear_Regression_Analysis
+
+Also check docs/mlr.pdf for other details.
+
+Please follow these steps to solve the challenge:
+
+1. Create the "X" matrix for each sample of dimensions 128x512 (See we have picked multiples of 32 for each dimension. Guess why?)
+2. Create the "Y" vector as a matrix with dimensions 128x1.
+3. Find $\hat{Beta}$
