@@ -11,16 +11,17 @@ Also check docs/mlr.pdf for other details.
 
 Please follow these steps to solve the challenge:
 
-1. Create the "X" matrix for each sample of dimensions 128x512 (See we have picked multiples of 32 for each dimension. Guess why?)
-2. Create the "Y" vector as a matrix with dimensions 128x1.
+1. Create the "X" matrix for each sample of dimensions 128x512 (See we have picked multiples of 32 for each dimension. Guess why?). Use the random number generator provided.
+2. Create the "Y" vector as a matrix with dimensions 128x1. Use the random number generator provided.
 3. Find "Beta" from the minimization problem
 4. Compute Variances, SSR, SST, SSE and the corresponding MSR, MST and MSE.
 5. Test the NULL Hypothesis from F0 using the F or Fischer distribution CDF or Cummulative Distribution Function. You can fix this parameter to a constant using a criterion for alpha such as 0.1
 6. Once you test it, compute the p-value which corresponds to a confidence interval of, if alpha is 0.1, 90%. It is computed using the t-Student distribution CDF. For those of you who are fund of precision, the t-Student's CDF is a Hypergeometric function but when the dimensionality of the problem (e.g. in this case is 512-128-1) is large it tends to the normal distribution with standard deviation 1.
-7. After completing the ANOVA table save the results.
+7. After completing the ANOVA table save the results for the regression sample.
 8. Select appropriately the subset of relevant features using the criteria p-value < 0.25
 9. Rerun the aforementioned test again only for the subset. In this case you may find it useful to redefine a new matrix with a fewer number of columns. We leave that up to you.
 10. After completing the ANOVA for the subset store the results in another file.
+11. Repeat the procedure for the 8192 samples.
 11. Plot F-test, p-test, and R^2 for the regression in each case and compare.
 
 Best of luck!
