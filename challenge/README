@@ -22,7 +22,7 @@ Please follow these steps to solve the challenge:
 9. Rerun the aforementioned test again only for the subset. In this case you may find it useful to redefine a new matrix with a fewer number of columns. We leave that up to you.
 10. After completing the ANOVA for the subset store the results in another file.
 11. Repeat the procedure for the 8192 samples.
-11. Plot F-test, p-test, and R^2 for the regression in each case and compare.
+12. Plot F-test, p-test, and R^2 for the regression in each case and compare.
 
 Best of luck!
 
