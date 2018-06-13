@@ -43,6 +43,8 @@ Carlos Arango's repository for singularity turorial:
 https://github.com/ArangoGutierrez/Singularity-tutorial.github.io
 https://github.com/ArangoGutierrez/containers-benchs
 
+An interesting example of the benefits of Singularity:
+https://github.com/wresch/python_import_problem/
 
 
 We receive any comments!
