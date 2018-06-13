@@ -5,3 +5,4 @@ CythonExamples/*/*.c
 exe*
 */build
 *.orig
+*~

@@ -6,15 +6,15 @@ Please find all the information displayed here for your consideration.
 
 Carlos E. Álvarez's repository for C/C++ exercises and code:
 
-https://github.com/jpmallarino/sshpc/tree/master/code_for_class
-https://github.com/jpmallarino/sshpc/tree/master/code_handson
+https://github.com/jpmallarino/sshpc/tree/master/c_cpp_examples
+https://github.com/jpmallarino/sshpc/tree/master/c_cpp_handson
 
 
 # Cython/Python
 
 Verónica Arias's repository for Cython exercises and code:
 
-https://github.com/jpmallarino/sshpc/tree/master/CythonExamples
+https://github.com/jpmallarino/sshpc/tree/master/cython_examples
 
 
 # OpenMP
@@ -23,11 +23,11 @@ Silvio Luiz Stanzani's Repository for the course:
 
 https://github.com/intel-unesp-mcp/sshpc-omp-course
 
-And the document, https://github.com/intel-unesp-mcp/sshpc-omp-course/blob/master/short-course-SSHPC-los-andes.pdf
+And the document (also in this repo under presentations), https://github.com/intel-unesp-mcp/sshpc-omp-course/blob/master/short-course-SSHPC-los-andes.pdf
 
 Solutions to Silvio's problems is found in the folder:
 
-https://github.com/jpmallarino/sshpc/tree/master/silvio-solutions
+https://github.com/jpmallarino/sshpc/tree/master/openmp_solutions
 
 # CUDA & OpenACC
 
